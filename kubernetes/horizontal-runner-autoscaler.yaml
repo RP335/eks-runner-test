@@ -1,0 +1,16 @@
+---
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: HorizontalRunnerAutoscaler
+metadata:
+  name: kubernetes-runners-autoscaler
+  namespace: actions
+spec:
+  scaleTargetRef:
+    name: kubernetes-runners
+  scaleDownDelaySecondsAfterScaleOut: 300
+  minReplicas: 1
+  maxReplicas: 10
+  metrics:
+  - type: TotalNumberOfQueuedAndInProgressWorkflowRuns
+    repositoryNames:
+    - GithubRunnersTestOrg/calculator

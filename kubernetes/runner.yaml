@@ -1,0 +1,9 @@
+---
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: Runner
+metadata:
+  name: kubernetes-single-runner
+  namespace: actions
+spec:
+  organization: GithubRunnersTestOrg
+  env: []
