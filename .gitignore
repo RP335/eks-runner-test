@@ -3,5 +3,5 @@
 *.tfstate.backup
 
 # Terraform .terraform directory
-.terraform/
+terraform/.terraform/
 
