@@ -81,13 +81,20 @@ helm install \
 kubectl create ns actions
 ```
 
-- Create secret to authenticate with GitHub
+- Create secret to authenticate with GitHub - GitHub App method
 ```bash
 kubectl create secret generic controller-manager \
     -n actions \
     --from-literal=github_app_id=<> \
     --from-literal=github_app_installation_id=<> \
     --from-file=github_app_private_key=<>
+```
+
+- Create secret to authenticate with GitHub - GitHub PAT
+```bash
+kubectl create secret generic controller-manager \
+    -n actions \
+    --from-literal=github_token=<GitHub Token>
 ```
 
 - Add actions  helm repo
