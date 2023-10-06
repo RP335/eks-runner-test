@@ -109,7 +109,7 @@ helm search repo actions
 helm install actions \
     actions-runner-controller/actions-runner-controller \
     --namespace actions \
-    --version 0.23.1 \
+    --version 0.23.5 \
     --set syncPeriod=1m
 ```
 
