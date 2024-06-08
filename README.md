@@ -1,5 +1,5 @@
 # eks-runner-test for ap-south-1 region
-Attributed to Anton Putra
+Attributed to Anton Putra [yt](https://www.youtube.com/@AntonPutra), [og-video](https://youtu.be/lD0t-UgKfEo?feature=shared)
 # GitHub Actions Self Hosted Runner (Autoscaling with Kubernetes)
 
 [YouTube Tutorial](https://youtu.be/lD0t-UgKfEo)
